@@ -103,6 +103,14 @@ export const projects = [
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "https://doctor-patient-host.vercel.app",
   },
+  {
+    id: 5,
+    title: "Waiting Vaya",
+    des: "HSC Math, Physics, and Chemistry problem solving website",
+    img: "/waitingvaya.jpg",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "https://waiting-vaya-3-0.vercel.app/",
+  },
 ];
 
 export const testimonials = [
