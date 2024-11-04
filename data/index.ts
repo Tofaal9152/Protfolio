@@ -111,6 +111,14 @@ export const projects = [
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "https://waiting-vaya-3-0.vercel.app/",
   },
+  {
+    id: 6,
+    title: "E-commerce Frontend",
+    des: "E-commerce website with a focus on user experience",
+    img: "/Ecommerce.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "https://ecommerce-gamma-gilt-55.vercel.app/",
+  },
 ];
 
 export const testimonials = [
