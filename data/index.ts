@@ -119,6 +119,14 @@ export const projects = [
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "https://ecommerce-gamma-gilt-55.vercel.app/",
   },
+  {
+    id: 7,
+    title: "Class Connect",
+    des: "ClassConnect: Simplifying Class Management and Communication",
+    img: "/classconnect.jpg",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "https://class-connect-omega.vercel.app/",
+  },
 ];
 
 export const testimonials = [
