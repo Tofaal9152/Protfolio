@@ -19,7 +19,7 @@ const Hero = () => {
           <div>
             <BackgroundGradient className="rounded-2xl p-4 md:p-6 flex flex-col items-center bg-white dark:bg-black-100">
               <Image
-                src={`/tofajashore.jpg`}
+                src={`/TofaalViva.jpg`}
                 alt="Tofaal Ahmed"
                 height="200"
                 width="200"
