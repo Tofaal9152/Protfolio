@@ -1,5 +1,3 @@
-"use client";
-import Approach from "@/components/Approach";
 import Feedback from "@/components/Clients";
 import ExperienceAndResume from "@/components/Experience";
 import Footer from "@/components/Footer";
@@ -17,7 +15,6 @@ const Home = () => {
         <RecentProjects />
         <Feedback />
         <ExperienceAndResume />
-        <Approach />
         <Footer />
       </div>
     </main>
