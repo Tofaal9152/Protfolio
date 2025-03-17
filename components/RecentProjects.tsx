@@ -1,5 +1,7 @@
 import { projects } from "@/data";
 import { PinContainer } from "./ui/Pin";
+import Image from "next/image";
+import Link from "next/link";
 
 const RecentProjects = () => {
   return (
@@ -20,13 +22,15 @@ const RecentProjects = () => {
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}
                 >
-                  <a href={item.link}>
-                    <img
+                  <Link href={item.link}>
+                    <Image
+                      width={1000}
+                      height={1000}
                       src={item.img}
                       alt={item.title}
                       className="object-cover w-full h-full rounded-xl"
                     />
-                  </a>
+                  </Link>
                 </div>
               </div>
 

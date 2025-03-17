@@ -1,7 +1,7 @@
 import {  testimonials } from "@/data";
 import { InfiniteMovingCards } from "./ui/InfiniteCards";
 
-const Clients = () => {
+const Feedback = () => {
   return (
     <section id="testimonials">
       <h1 className="heading">
@@ -24,4 +24,4 @@ const Clients = () => {
   );
 };
 
-export default Clients;
+export default Feedback;
