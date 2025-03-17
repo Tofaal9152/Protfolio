@@ -7,6 +7,14 @@ import { socialMedia } from "@/data";
 import Link from "next/link";
 
 const Hero = () => {
+  const Skills = [
+    "Next.Js || React-Vite",
+    "React Native",
+    "TypeScript || JavaScript",
+    "Tailwind CSS || ShadCN",
+    "Express.Js || MongoDB",
+    "Redux || Zod",
+  ];
   return (
     <div id="about" className="relative pb-12 pt-16 md:pt-8 text-white">
       {/* Background Grid */}
@@ -41,34 +49,11 @@ const Hero = () => {
                 </p>
                 {/* Skills */}
                 <div className="mt-3 md:mt-0 space-y-2 md:space-y-0 justify-evenly  md:flex md:flex-wrap md:gap-3">
-                  <div>
-                    <MagicButton
-                      title="Next.Js || React.Js"
-                      icon=""
-                      position=""
-                    />
-                  </div>
-                  <div>
-                    <MagicButton
-                      title="TypeScript || JavaScript"
-                      icon=""
-                      position=""
-                    />
-                  </div>
-                  <div>
-                    <MagicButton
-                      title="Tailwind CSS || ShadCN"
-                      icon=""
-                      position=""
-                    />
-                  </div>
-                  <div>
-                    <MagicButton
-                      title="Express.Js || MongoDB "
-                      icon=""
-                      position=""
-                    />
-                  </div>
+                  {Skills.map((skill) => (
+                    <div>
+                      <MagicButton title={skill} icon="" position="" />
+                    </div>
+                  ))}
                 </div>
               </div>
             </BackgroundGradient>
