@@ -49,8 +49,8 @@ const Hero = () => {
                 </p>
                 {/* Skills */}
                 <div className="mt-3 md:mt-0 space-y-2 md:space-y-0 justify-evenly  md:flex md:flex-wrap md:gap-3">
-                  {Skills.map((skill) => (
-                    <div>
+                  {Skills.map((skill,i) => (
+                    <div key={i}>
                       <MagicButton title={skill} icon="" position="" />
                     </div>
                   ))}
