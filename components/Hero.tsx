@@ -9,19 +9,19 @@ import Link from "next/link";
 const Hero = () => {
   const Skills = [
     "Next.Js || React-Vite",
-    "React Native",
+    "React Native || Expo",
+    "Nestjs || ExpressJs",
+    "Prisma || MongoDB || PostgreSQL",
+    "Websocket || Socket.IO || WebRTC",
     "TypeScript || JavaScript",
     "Tailwind CSS || ShadCN",
-    "Express.Js || MongoDB",
-    "Redux || Zod",
+    "Redux || Zod || Tanstackquery || Zustand",
   ];
   return (
     <div id="about" className="relative pb-12 pt-16 md:pt-8 text-white">
-      {/* Background Grid */}
       <div className="absolute inset-0 z-0 h-full w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.03] bg-grid-black-100/[0.03] flex items-center justify-center"></div>
-
       {/* Main Content */}
-      <div className="relative z-10 flex flex-col xl:flex-row justify-center items-center my-8 md:my-16 px-4 md:px-8 lg:px-16 space-y-8 md:space-y-0 md:space-x-8">
+      <div className="relative z-10 flex flex-col xl:flex-row justify-center items-center my-8 md:my-16 px-4 md:px-8 lg:px-16 space-y-8 md:space-y-0 md:space-x-12">
         {/* Image on the Left */}
         <div className="flex justify-center md:justify-start w-full md:w-auto">
           <div>
@@ -38,18 +38,19 @@ const Hero = () => {
                   Md Tofaal Ahmed
                 </p>
                 <p className="xl:block hidden text-xs sm:text-sm lg:text-base xl:text-lg text-neutral-600 dark:text-neutral-400 text-center lg:text-left">
-                  Experienced Next.js developer with a passion for crafting
-                  dynamic, user-centric web applications.
+                  Experienced Next.js,Nestjs & React Native(Expo) Developer with
+                  a passion for building responsive, high-performance web
+                  applications.
                 </p>
 
                 <p className="xl:hidden block text-xs sm:text-sm lg:text-base xl:text-lg text-neutral-600 dark:text-neutral-400 ">
-                  Hi! I&apos;m Tofaal, a Next.js Developer based in Bangladesh.
-                  I specialize in creating responsive, high-performance web
-                  applications using...
+                  Experienced Next.js,Nestjs & React Native(Expo) Developer with
+                  a passion for building responsive, high-performance web
+                  applications.
                 </p>
                 {/* Skills */}
                 <div className="mt-3 md:mt-0 space-y-2 md:space-y-0 justify-evenly  md:flex md:flex-wrap md:gap-3">
-                  {Skills.map((skill,i) => (
+                  {Skills.map((skill, i) => (
                     <div key={i}>
                       <MagicButton title={skill} icon="" position="" />
                     </div>
@@ -63,7 +64,7 @@ const Hero = () => {
         {/* Text on the Right */}
         <div className="hidden xl:flex flex-col items-center md:items-start justify-center text-center md:text-left space-y-4 max-w-lg">
           <p className="uppercase tracking-widest text-xs text-blue-200">
-            Web Developer & Designer
+            Web-App-Backend Developer
           </p>
 
           <TextGenerateEffect
@@ -72,14 +73,21 @@ const Hero = () => {
           />
 
           <p className="text-xs md:text-sm lg:text-base">
-            Hi! I&apos;m Tofaal, a Next.js Developer based in Bangladesh. I
-            specialize in creating responsive, high-performance web applications
-            using
-            <span className="text-[#CBACF9]"> Next.js, </span>
-            <span className="text-[#CBACF9]">TypeScript, </span>
-            <span className="text-[#CBACF9]">Tailwind CSS, </span>and modern
-            frontend technologies.
+            Hi! I&apos;m Tofaal, a developer based in Bangladesh. I&apos;m an{" "}
+            <span className="text-[#CBACF9]">
+              advanced API integration & Frontend specialist
+            </span>{" "}
+            with experience in both{" "}
+            <span className="text-[#CBACF9]">Mobile</span> and{" "}
+            <span className="text-[#CBACF9]">Backend</span> development.
+            I&apos;ve completed numerous{" "}
+            <span className="text-[#CBACF9]">projects and freelance</span> work
+            over the past <span className="text-[#CBACF9]">2 years</span>.
           </p>
+          <Link href="https://drive.google.com/drive/folders/163SFJu6pIqHM8Smj0-CfCs3Pko7FdE0s?usp=sharing" target="_blank">
+            <MagicButton title={"Click to View Resume"} icon="" position="" />
+            
+          </Link>
           <div className="flex justify-center md:justify-start items-center gap-4">
             {socialMedia.map((info) => (
               <Link key={info.id} href={info.link}>

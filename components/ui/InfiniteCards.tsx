@@ -2,6 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 
 export const InfiniteMovingCards = ({
   items,
@@ -116,9 +117,11 @@ export const InfiniteMovingCards = ({
               <div className="relative z-20 mt-6 flex items-center">
                 {/* Profile image container */}
                 <div className="me-3 flex-shrink-0">
-                  <img
+                  <Image
                     className="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover"
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPyGNr2qL63Sfugk2Z1-KBEwMGOfycBribew&s"
+                    width={500}
+                    height={500}
                     alt="profile"
                   />
                 </div>
